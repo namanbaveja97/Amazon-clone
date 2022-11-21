@@ -1,0 +1,69 @@
+.checkout {
+   display: flex;
+   background-color: white;
+   padding: 10px 0px;
+}
+
+.checkout__title{
+    display:flex ;
+   padding: 10px; 
+    height: max-content;
+    border-bottom: 1px solid lightgray;
+}
+
+.checkout__add{
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+.checkout__empty{
+    padding: 0px 12px;
+    color: rgb(0, 4, 7);
+   
+}
+
+.empty_emote{
+    position:absolute;
+   
+    right: 30%;
+    left: 35%;
+    font-size: 290px;
+    z-index: -1;
+    opacity: 0.1;
+    
+}
+
+.checkout__right{
+    background-color: white;
+}
+
+.subtotal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: lightgray;
+    margin: 20px;
+   
+    border: 2px solid lightgray;
+    box-shadow: inset 4px 4px 2px rgb(51, 51, 51), 4px 4px 12px rgb(51, 51, 51);
+    
+}
+
+.checkout-btn{
+    background-color: #ffa500;
+    border: 1px solid;
+    border-top-color: rgb(185, 119, 0);
+    border-right-color: rgb(255 164 0);
+    border-bottom-color: rgb(184 185 0);
+    border-left-color: rgb(227 171 71);
+    border-radius: 2px;
+    margin-top: 4px;
+    padding: 4px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}

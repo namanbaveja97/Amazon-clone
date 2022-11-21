@@ -5,14 +5,21 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-
+import { BrowserRouter } from "react-router-dom";
+import { StateProvider } from './components/StateProvider';
+import reducer, { initialState } from "./components/Reducer";
 const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+          <StateProvider initialState={initialState} reducer={reducer}>
+              <App />
+          </StateProvider>
+      </BrowserRouter>
+      
     </Provider>
   </React.StrictMode>
 );
